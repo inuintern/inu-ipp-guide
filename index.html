@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인천대학교 일학습병행(IPP) 통합 안내</title>
+    <style>
+        :root { --inu-blue: #00479d; --inu-light-blue: #e7eff9; --inu-orange: #e67e22; --text-dark: #333; --border-color: #dee2e6; }
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; line-height: 1.6; color: var(--text-dark); margin: 0; padding: 0; background-color: #f8f9fa; }
+        
+        /* 네비게이션 및 헤더 */
+        header { background: var(--inu-blue); color: white; padding: 40px 20px; text-align: center; }
+        .award-banner { background: var(--inu-orange); color: white; display: inline-block; padding: 8px 20px; border-radius: 50px; font-weight: bold; font-size: 14px; margin-bottom: 15px; }
+        h1 { margin: 0; font-size: 28px; word-break: keep-all; }
+        .sub-txt { opacity: 0.9; margin-top: 10px; font-size: 16px; }
+
+        .container { width: 95%; max-width: 1000px; margin: -30px auto 50px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        /* 섹션 스타일 */
+        section { margin-bottom: 60px; }
+        .section-title { font-size: 24px; color: var(--inu-blue); border-bottom: 3px solid var(--inu-blue); padding-bottom: 10px; margin-bottom: 25px; font-weight: bold; display: flex; align-items: center; }
+        .section-title::before { content: '■'; margin-right: 10px; font-size: 18px; }
+
+        /* 통계 대시보드 */
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 30px; }
+        .stat-card { background: var(--inu-light-blue); padding: 20px; border-radius: 10px; text-align: center; }
+        .stat-card span { display: block; font-size: 13px; color: #555; }
+        .stat-card strong { font-size: 22px; color: var(--inu-blue); }
+
+        /* 프로세스 단계 */
+        .process-row { display: flex; justify-content: space-between; gap: 10px; background: #fff; padding: 15px; }
+        .step-item { flex: 1; background: #f1f1f1; padding: 15px; border-radius: 8px; text-align: center; position: relative; }
+        .step-item b { color: var(--inu-blue); display: block; margin-bottom: 5px; }
+        .step-item p { margin: 0; font-size: 13px; }
+
+        /* 혜택 카드 그리드 */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .benefit-box { border: 1px solid var(--border-color); padding: 20px; border-radius: 12px; border-top: 5px solid var(--inu-orange); }
+        .benefit-box h3 { margin-top: 0; color: var(--inu-blue); font-size: 18px; }
+        .highlight { color: #d35400; font-weight: bold; }
+
+        /* 테이블 스크롤 보완 */
+        .table-wrap { width: 100%; overflow-x: auto; margin-top: 15px; border: 1px solid var(--border-color); border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; min-width: 800px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid var(--border-color); font-size: 14px; }
+        th { background: #f4f4f4; font-weight: bold; color: var(--inu-blue); }
+        .scroll-hint { font-size: 12px; color: #888; text-align: right; margin-top: 5px; }
+
+        /* 연락처/푸터 */
+        footer { background: #2c3e50; color: white; padding: 40px 20px; border-radius: 12px; }
+        .contact-flex { display: flex; flex-wrap: wrap; gap: 30px; }
+        .contact-card { flex: 1; min-width: 280px; }
+        .contact-card h4 { border-bottom: 1px dashed #7f8c8d; padding-bottom: 10px; margin-top: 0; }
+        .call-btn { display: inline-block; background: var(--inu-orange); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .process-row { flex-direction: column; }
+            .grid-2 { grid-template-columns: 1fr; }
+            h1 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="award-banner">2년 연속 성과평가 A 부터 최우수 S 등급 까지, 대한민국 정부가 인정한 일학습병행 절대 강자</div>
+    <h1>인천대학교 일학습병행 4년제대 재학형 사업</h1>
+    <p class="sub-txt">기업 맞춤형 인재 양성과 상호 발전을 위한 전략적 파트너십</p>
+</header>
+
+
+<div class="container">
+    <!-- 1. 사업 개요 및 통계 -->
+    <section>
+        <h2 class="section-title">2026년 사업 운영 현황</h2>
+        <div class="stats-grid">
+            <div class="stat-card"><span>총 운영 과정</span><strong>10개 과정</strong></div>
+            <div class="stat-card"><span>참여 기업</span><strong>38개사</strong></div>
+            <div class="stat-card"><span>학습 근로자</span><strong>71명</strong></div>
+            <div class="stat-card"><span>수료율</span><strong>100%</strong></div>
+        </div>
+        <p>인천대학교는 고용노동부 주관 일학습병행 사업 운영대학으로서, 기업이 청년을 선(先) 채용 후 체계적인 훈련(OJT/Off-JT)을 통해 현장 전문가로 양성하는 제도를 운영합니다.</p>
+    </section>
+
+    <!-- 2. 운영 프로세스 -->
+    <section>
+        <h2 class="section-title">표준 운영 프로세스</h2>
+        <div class="process-row">
+            <div class="step-item"><b>STEP 01</b><p>일학습병행 신청(STARTinU)<br>(5월~)</p></div>
+            <div class="step-item"><b>STEP 02</b><p>전담교수와 기업매칭 상담<br>(5월~10월)</p></div>
+            <div class="step-item"><b>STEP 03</b><p>기업 면접 및 학습근로자 선발<br>(9월~익년 1월)</p></div>
+            <div class="step-item"><b>STEP 04</b><p>학습근로 계약서 작성<br>(익년 2월)</p></div>
+        </div>
+
+        <div class="process-row">
+            <div class="step-item"><b>STEP 05</b><p>일학습병행 훈련 실시<br>(3월~익년 2월)</p></div>
+            <div class="step-item"><b>STEP 06</b><p>학습근로자 내부 평가<br>(3월 ~ 익년 2월)</p></div>
+            <div class="step-item"><b>STEP 07</b><p>국가자격 응시(외부평가) 및 부여<br>(익년 2월)</p></div>
+            <div class="step-item"><b>STEP 08</b><p>정규직 전환 검토<br>(익년 2월)</p></div>
+        </div>
+
+    </section>
+
+    <!-- 3. 학습근로자 혜택 -->
+    <section>
+        <h2 class="section-title">학습근로자(학생) 4대 혜택</h2>
+        <div class="grid-2">
+            <div class="benefit-box">
+                <h3>🎓 학점 및 등록금</h3>
+                <ul>
+                    <li>최대 <span class="highlight">26학점</span> 취득 (4학년 1·2학기)</li>
+                    <li>4학년 1학기 실 납부 등록금 최대 <span class="highlight">300만원</span> 지원</li>
+                </ul>
+            </div>
+            <div class="benefit-box">
+                <h3>💰 급여 및 수당</h3>
+                <ul>
+                    <li>월 <span class="highlight">최저임금 이상 ('26년 기준 215.8만원)</span> 급여 지급</li>
+                    <li>현장적응 지원금 <span class="highlight">연 120만원</span> 지급</li>
+                </ul>
+            </div>
+            <div class="benefit-box">
+                <h3>📜 국가자격 및 성과금</h3>
+                <ul>
+                    <li>NCS 기반 <span class="highlight">국가자격(L4~L5)</span> 취득</li>
+                    <li>외부평가 합격 시 한국산업인력공단 성과금 <span class="highlight">240만원</span></li>
+                    <li>외부평가 합격 시 인천대학교 장려금 <span class="highlight">50만원</span></li>
+                </ul>
+            </div>
+            <div class="benefit-box">
+                <h3>🚀 취업 및 경력</h3>
+                <ul>
+                    <li>1년의 경력 선점 및 실무 역량 강화</li>
+                    <li>실무역량 교육 (의사소통역량, AI활용 및 각종 특강)</li>
+                    <li>훈련 종료 후 <span class="highlight">정규직 전환</span> 기회 부여</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 학과별 NCS 매칭 (별첨 데이터 포함) -->
+    <section>
+        <h2 class="section-title">인천대학교 일학습병행 과정 및 참여기업</h2>
+        <p class="scroll-hint">표를 좌우로 밀어서 전체 내용을 확인하세요 ↔</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>일학습병행 과정</th>
+                        <th>참여 학과(부)</th>
+                        <th>주요 참여 기업</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>건설관리_L5</b></td>
+                        <td>도시건축학부, 도시공학과</td>
+                        <td>신한종합건축, 무영씨엠, 행림종합건축, 아이티엠건축, 토펙엔지니어링, 동일건축, 반석건설, 씨제이드, 토문엔지니어링, 호반산업 등</td>
+                    </tr>
+                    <tr>
+                       <td><strong>토목설계_L5</strong></td>
+                       <td>도시환경공학부(건설환경공학), 도시공학과</td>
+                       <td>건화,아라기술, 경화엔지니어링, 서영엔지니어링, 경동엔지니어링, 유신, 한국종합기술, 동부엔지니어링, 수성엔지니어링 등 </td>
+                    </tr>
+                    <tr>
+                       <td><strong>환경영향평가_L5</strong></td>
+                       <td>도시환경공학부(환경공학), 해양학과</td>
+                       <td>이엔씨기술, 마린, 경화엔지니어링, 동아기술공사, 신일환경, 신일이엔씨 등</td>
+                    </tr>
+                    <tr>
+                        <td><b>SW개발_L5</b></td>
+                        <td>컴퓨터공학부, 정보통신공학, 임베디드시스템공학</td>
+                        <td>영림원소프트랩, 지케스, 핑거, 모빌리오, 현대IT, 테크웨이즈, 한국씨엠씨 등</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IT시스템운영_L5</strong></td>
+                        <td>정보통신공학과, 컴퓨터공학부</td>
+                        <td>솔리데오, 엠키스코어 등</td>
+                   </tr>
+                    <tr>
+                        <td><b>반도체장비개발_L5</b></td>
+                        <td>기계공학과, 신소재공학과, 전자공학부</td>
+                        <td>앰코테크놀로지코리아, 제이셋스태츠칩팩코리아, 코리아써키트 등</td>
+                    </tr>
+                    <tr>
+                        <td><b>구조해석설계_L4</b></td>
+                        <td>기계공학과, 바이오로봇시스템공학과</td>
+                        <td>SIMPAC, 에이치케이, 엠씨넥스, TPC로보틱스, 대동도어, 씨제이드 등</td>
+                    </tr>
+                    <tr>
+                        <td><strong>마케팅전략기획_L5</strong></td>
+                        <td>미디어커뮤니케이션학과, 경영학과</td>
+                        <td>아이씨뱅큐, 형지엘리트, 씨제이드, 케이저, 맥라인 등</td>
+                    </tr>
+                    <tr>
+                        <td><strong>산업물류_L4</strong></td>
+                        <td>Global Trade & Service학부, 경제학과</td>
+                        <td> 로지션, 잉글우드랩코리아 등</td>
+                    </tr>
+                    <tr>
+                        <td><b>바이오의약품제조_L5</b></td>
+                        <td>생명과학부, 생명공학부</td>
+                        <td>아이월드제약, 경방신약, 네오캠코리아, 삼익제약 등</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 5. 참여기업 혜택 -->
+    <section>
+        <h2 class="section-title">참여 기업 지원 및 혜택</h2>
+        <div class="grid-2">
+            <div class="benefit-box" style="border-top-color: var(--inu-blue);">
+                <h3>💸 재정적 지원 (1인당 기준)</h3>
+                <p>연간 약 <span class="highlight">1,700만원</span> 수준 지원</p>
+                <ul style="font-size: 13px;">
+                    <li>훈련장려금: 연 300만원</li>
+                    <li>기업현장교사/HRD수당: 연 700만원</li>
+                    <li>OJT 훈련비 지원 (지원율 200% 기준, 연472만원)</li>
+                    <li>외부평가 합격 성과금 (240만원)</li>
+                </ul>
+            </div>
+
+            <div class="benefit-box" style="border-top-color: var(--inu-blue);">
+                <h3>🎖️ 제도적 가점</h3>
+                <ul>
+                    <li><b>조달청 :</b> 물품제조 입찰 가점(0.2점)</li>
+                    <li><b>병무청 :</b> 산업기능요원 배정 <span class="highlight">1순위</span></li>
+                    <li><b>금융 :</b> 하나은행 대출금리 1.0% 감면</li>
+                </ul>
+            </div>
+
+            <div class="benefit-box" style="border-top-color: var(--inu-blue);">
+                <h3>🎖️ 학습기업 최적 인재 확보</h3>
+                <ul>
+                    <li><b>맞춤형 인재 양성 :</b> 기업 고유의 기술과 문화를 학습하는 OJT를 통해현장 실무형 인재로 빠르게 성장</li>
+                    <li><b>채용 리스크 감소 :</b> 1년여간의 훈련 기간 동안 업무 적응도와 인성을 충분히 검증한 후 정규직 전환이 가능</li>
+                    <li><b>재교육 비용 절감 :</b> 신입사원 교육에 소요되는 시간과 비용을 정부 지원금으로대체 가능</li>
+                    <li><b>장기근속 유도 :</b> 체계적인 경력개발경로(CDP) 제공으로 근로자의 직무 만족도와 애사심을 고취</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 푸터 및 연락처 -->
+    <footer>
+        <h2 style="margin-top:0; color: var(--inu-orange);">📞 사업 참여 및 상담 문의</h2>
+        <div class="contact-flex">
+            <div class="contact-card">
+                <h4>소승욱 산학협력중점교수 (공학박사)</h4>
+                <p>전화: 032-835-9432</p>
+                <p>이메일: suso1122@inu.ac.kr</p>
+                <a href="tel:0328359432" class="call-btn">지금 바로 통화하기</a>
+            </div>
+            <div class="contact-card">
+                <h4>김갑성 산학협력중점교수</h4>
+                <p>전화: 032-835-9431</p>
+                <p>이메일: gskim1@inu.ac.kr</p>
+                <a href="tel:0328359432" class="call-btn">지금 바로 통화하기</a>
+                <p style="font-size: 13px; margin-top:10px; opacity:0.8;">주소: 인천광역시 연수구 아카데미로 119(송도동)<br>인천대학교 학생취업처 현장실습지원센터</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
